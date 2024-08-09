@@ -1,0 +1,20 @@
+.breadcrumbs{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin:10px;
+    border:1px solid rgb(250, 59, 97);
+    width:90%;
+  margin:10px auto;
+}
+.breadcrumbs>a{
+    width:max-content;
+    color:rgb(10, 144, 247);
+    padding:0 5px;
+    text-decoration: none;
+}
+.breadcrumbs>a:hover{
+ color:white;
+ background-color: rgb(255, 156, 172);
+}
