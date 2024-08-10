@@ -42,7 +42,7 @@ formDetails.insubcategory=document.getElementById('insubcategory').checked;
     }
 
 
-        await fetch('http://localhost:4000/search',{
+        await fetch('https://e-commerce-backend-iixa.onrender.com/search',{
             method:'POST',
             headers:{
                 Accept:'application/form-data',

@@ -7,7 +7,7 @@ const Category = () => {
   const {all_categories}=useShop();
   const [isvisible,setisvisible]=useState(false);
   const [category,setcategory]=useState("");
-  const [style, setstyle]=useState({})
+
   return (
     <div className='category-container' style={(window.location.pathname==='/')?{}:{marginTop:'75px',boxShadow:'none'}}>
       <div className='innercontainer' style={(window.location.pathname==='/')?{}:{height:'80px',backgroundColor:'#e34d69'}}>

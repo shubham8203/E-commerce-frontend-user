@@ -14,9 +14,9 @@ const ShopProvider =  (props) => {
     }])
        
     useEffect(  () => {
-         fetch('http://localhost:4000/allproducts').then((res) => (res.json())).then((data) => (setall_product(data)));
+         fetch('https://e-commerce-backend-iixa.onrender.com/allproducts').then((res) => (res.json())).then((data) => (setall_product(data)));
         if (localStorage.getItem('token')) {
-              fetch('http://localhost:4000/cart', {
+              fetch('https://e-commerce-backend-iixa.onrender.com/cart', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/form-data',
@@ -28,7 +28,7 @@ const ShopProvider =  (props) => {
             }).then((res) => (res.json())).then((data) => setcartItems(data))
         }
 
-          fetch('http://localhost:4000/allcategories').then((res)=>res.json()).then((data)=>setall_categories(data));
+          fetch('https://e-commerce-backend-iixa.onrender.com/allcategories').then((res)=>res.json()).then((data)=>setall_categories(data));
         
     }, []);
 
@@ -36,7 +36,7 @@ const ShopProvider =  (props) => {
     const addToCart = (id,qty) => {
 
         if (localStorage.getItem('token')) {
-            fetch('http://localhost:4000/addtocart', {
+            fetch('https://e-commerce-backend-iixa.onrender.com/addtocart', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/form-data',
@@ -60,7 +60,7 @@ const ShopProvider =  (props) => {
     const removeFromCart = (id) => {
          
         if (localStorage.getItem('token')) {
-            fetch('http://localhost:4000/delete', {
+            fetch('https://e-commerce-backend-iixa.onrender.com/delete', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',

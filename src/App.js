@@ -23,6 +23,7 @@ function App(){
     return ( 
       
     <>
+    
     <BrowserRouter>
     <Navbar/>
     {(window.location.pathname!=='/login'&&window.location.pathname!=='/signup')&&<Category/>} 
