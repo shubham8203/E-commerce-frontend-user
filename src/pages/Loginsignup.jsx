@@ -18,7 +18,7 @@ const Loginsignup = () => {
  },[state]);
   const [agree, setagree] = useState(false);
   const accept = (e) => {
-    setagree(e.target.value);
+    setagree(e.target.checked);
   }
   const handler = (e) => {
     setformdata({ ...formdata, [e.target.name]: e.target.value });
@@ -82,7 +82,7 @@ const Loginsignup = () => {
             <input value={formdata.password} onChange={handler} type="password" name="password" placeholder="Password" />
           </div>
           <div className="loginsignup-agree">
-            <input type="checkbox" onChange={accept} />
+            <input type="checkbox" onClick={accept} />
             <p>By Continuing I agree to the terms of use & privacy policy</p>
           </div>
           <button type="button" onClick={(agree) ? () => (login()) : () => (alert("Please agree to the terms and conditions to continue"))}>Continue</button>
