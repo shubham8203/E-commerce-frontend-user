@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import { useShop} from '../context/ShopContext'
-import dropdown_icon from '../components/assets/Ecommerce_Assets/Assets/Frontend_Assets/dropdown_icon.png'
+import dropdown_icon from '../components/assets/dropdown_icon.png'
 import Item from '../components/items/Item';
 import './CSS/ShopCategory.css'
-import All_product from '../components/assets/Ecommerce_Assets/Assets/Frontend_Assets/all_product'
+import All_product from '../components/assets/all_product'
 
 
  const ShopCategory = (props) => {

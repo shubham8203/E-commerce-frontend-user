@@ -1,4 +1,5 @@
 .cartitems-container{
+    width:100%;
     margin:20px auto;
     border:1px solid rgb(237, 102, 125);
 }
@@ -13,7 +14,7 @@
     border:0;
 }
 .cartitems-format-main{
-    width:90%;
+    width:100%;
     display:grid;
     grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
     text-align: center;
@@ -24,19 +25,95 @@
     font-size:18px;
     font-weight: 600;
 }
-.cartitems-format {
-   
-    column-gap:60px;
-   font-size:17px;
-   font-weight:500;
-  
-}
+
+    .cartitems-container{
+        margin:20px auto;
+        border:1px solid rgb(237, 102, 125);
+    }
+    .cartitems{
+       width:90%;
+       margin:50px auto;
+        
+    }
+    .cartitems hr{
+        height:3px;
+        background-color: #e2e2e2;
+        border:0;
+    }
+    
+    .cartitems-format {
+        width:100%;
+        display:grid;
+        grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+        text-align: center;
+        padding-top: 10px;
+        vertical-align: top;
+        
+        gap:75px;
+        color:#454545;
+        padding:20px 0px;
+
+        
+       font-size:17px;
+       font-weight:500;
+      
+    }
+    .cartitem-product-icon{
+        height:62px;
+    }
+
+    .cartitems-quantity{
+        width:64px;
+        height:50px;
+        border:2px solid #ebebeb;
+        background:#fff;
+        margin:0 auto;
+    }
+    .cartitems-down{
+        display: flex;
+        margin:100px 0px;
+    }
+    .cartitems-total{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 200px;
+        gap:40px;
+    }
+    .cartitems-total-item{
+        display: flex;
+        justify-content: space-between;
+        padding:15px 0px;
+    }
+    .cartitems-total button{
+        width:262px;
+        height:58px;
+        outline:none;
+        border:none;
+        background: #ff5a5a;
+        color:#fff;
+        font-size:16px;
+        font-weight:600;
+        cursor:pointer;
+    }
+    
+
+    .name{
+        text-align: start;
+    }
+    
+    
+    
+    
+
 .cartitem-product-icon{
     height:62px;
 }
-.remove-icon{
-    height:30px;
+.cartitems-format>.remove-icon{
+    height:50px;
+    width:40px;
     cursor: pointer;
+    padding-left:40px;
 }
 .cartitems-quantity{
     width:64px;
@@ -73,9 +150,7 @@
     cursor:pointer;
 }
 
-.cartitems-format img{
-    padding:20px 20px;
-}
+
 .name{
     text-align: start;
 }

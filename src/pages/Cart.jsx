@@ -10,8 +10,8 @@ const Cart = () => {
   return (
     <div className='cart'>
 
-      {(total>0)?<div >
-        <h2>Cart Description</h2>
+      {(total>0)?<div className='non-empty'>
+        <h1>Cart Description</h1>
         <CartItems/>
         </div>:<div className='empty'>
         <h1 >Your Cart is Empty </h1>

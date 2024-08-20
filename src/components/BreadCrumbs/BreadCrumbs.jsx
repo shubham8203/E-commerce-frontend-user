@@ -1,6 +1,6 @@
 import React from 'react'
 import './BreadCrumbs.css'
-import arrow_icon from '../assets/Ecommerce_Assets/Assets/Frontend_Assets/arrow.png'
+import arrow_icon from '../assets/arrow.png'
 import { Link } from 'react-router-dom';
 
 

@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState,useContext} from "react";
-import All_product from '../components/assets/Ecommerce_Assets/Assets/Frontend_Assets/all_product'
+import All_product from '../components/assets/all_product'
 
 
 

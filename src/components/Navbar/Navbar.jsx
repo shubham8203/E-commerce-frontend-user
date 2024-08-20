@@ -5,9 +5,9 @@ import logo from '../assets/image.png'
 import cart from '../assets/cart.webp'
 import { Link } from 'react-router-dom'
 import { shopcontext } from '../../context/ShopContext'
-import search_icon from '../assets/Ecommerce_Assets/Assets/Frontend_Assets/search_icon.png'
+import search_icon from '../assets/search_icon.png'
 import profile_icon from '../assets/profile-icon-png.png'
-import arrow_icon from '../assets/Ecommerce_Assets/Assets/Frontend_Assets/arrow.png'
+import arrow_icon from '../assets/arrow.png'
 
 
 const Navbar = () => {
@@ -142,7 +142,7 @@ const Navbar = () => {
           if(!localStorage.getItem('token')){
             alert("Please Login First to View the Cart");
           }
-        }} reloadDocument={(localStorage.getItem('token'))?false:true} >
+        }} reloadDocument={true}   >
           <img src={cart} alt="" height={35} width={60} />
         </Link>
 

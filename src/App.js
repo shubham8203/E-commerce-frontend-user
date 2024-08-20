@@ -9,9 +9,9 @@ import Loginsignup from './pages/Loginsignup';
 import Cart from './pages/Cart';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Footer from './components/Footer/Footer';
-import banner_mens from './components/assets/Ecommerce_Assets/Assets/Frontend_Assets/banner_mens.png'
-import banner_women from './components/assets/Ecommerce_Assets/Assets/Frontend_Assets/banner_women.png'
-import banner_kids from './components/assets/Ecommerce_Assets/Assets/Frontend_Assets/banner_kids.png'
+import banner_mens from './components/assets/banner_mens.png'
+import banner_women from './components/assets/banner_women.png'
+import banner_kids from './components/assets/banner_kids.png'
 import Category from './components/Category/Category';
 import Search from './pages/Search';
 

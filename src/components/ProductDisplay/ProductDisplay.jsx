@@ -1,7 +1,7 @@
 import React, { useContext,useState } from 'react'
 import './ProductDisplay.css'
-import star_icon from '../assets/Ecommerce_Assets/Assets/Frontend_Assets/star_icon.png'
-import star_dull_icon from '../assets/Ecommerce_Assets/Assets/Frontend_Assets/star_dull_icon.png'
+import star_icon from '../assets/star_icon.png'
+import star_dull_icon from '../assets/star_dull_icon.png'
 import { shopcontext } from '../../context/ShopContext'
 
 const ProductDisplay = (props) => {
