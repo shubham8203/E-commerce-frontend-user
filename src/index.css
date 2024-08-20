@@ -13,6 +13,7 @@ body {
   font-family:Poppins;
   overflow-x: hidden;
 scroll-behavior: smooth;
+width:100vw;
 }
 
 #root{

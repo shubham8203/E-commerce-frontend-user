@@ -40,9 +40,10 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-     <Link to='/' style={{textDecoration:'none',color:'inherit'}} reloadDocument>
+      <div className="navbar-main">
+      <Link to='/' style={{textDecoration:'none',color:'inherit'}} reloadDocument>
      <div className='navbar-logo'>
-        <img src={logo} alt="logo" height={50} width={50} />
+        <img src={logo} alt="logo" height={40} width={40} />
         <p>Shop  Smart</p>
       </div>
      </Link>
@@ -143,7 +144,7 @@ const Navbar = () => {
             alert("Please Login First to View the Cart");
           }
         }} reloadDocument={true}   >
-          <img src={cart} alt="" height={35} width={60} />
+          <img src={cart} alt="" height={25} width={40} />
         </Link>
 
 
@@ -153,6 +154,8 @@ const Navbar = () => {
         
       </div>
 
+      </div>
+     
 
     </div>
   )

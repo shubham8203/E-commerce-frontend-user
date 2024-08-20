@@ -9,7 +9,7 @@ const Category = () => {
   const [category,setcategory]=useState("");
 
   return (
-    <div className='category-container' style={(window.location.pathname==='/')?{}:{marginTop:'70px',height:'50px',boxShadow:'none'}}>
+    <div className='category-container' style={(window.location.pathname==='/')?{}:{marginTop:'3.5%',height:'50px',boxShadow:'none'}}>
       <div className='innercontainer' style={(window.location.pathname==='/')?{}:{height:'90%',backgroundColor:'#e34d69'}}>
       {
         all_categories.map((item,i)=>{
